@@ -1,5 +1,5 @@
 # Getting Started with Podat Dashboard!
-![My Podat Dashboard Preview](./public/podatlayout.png)
+![My Podat Dashboard Preview](./public/podat.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
