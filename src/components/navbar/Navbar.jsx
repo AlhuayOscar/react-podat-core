@@ -1,13 +1,14 @@
 import "./navbar.scss";
+import { useContext } from "react";
+import { DarkModeContext } from "../../context/darkModeContext";
+
+import LightModeIcon from "@mui/icons-material/LightMode";
+import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
-import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import FullscreenExitOutlinedIcon from "@mui/icons-material/FullscreenExitOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
-import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
-import { DarkModeContext } from "../../context/darkModeContext";
-import { useContext } from "react";
 
 const Navbar = () => {
   const { dispatch } = useContext(DarkModeContext);
@@ -25,7 +26,7 @@ const Navbar = () => {
             English
           </div>
           <div className="item">
-            <DarkModeOutlinedIcon
+            <LightModeIcon
               className="icon"
               onClick={() => dispatch({ type: "TOGGLE" })}
             />
@@ -35,11 +36,11 @@ const Navbar = () => {
           </div>
           <div className="item">
             <NotificationsNoneOutlinedIcon className="icon" />
-            <div className="counter">1</div>
+            <div className="counter">{/*"Depends on the notifications"*/}</div>
           </div>
           <div className="item">
             <ChatBubbleOutlineOutlinedIcon className="icon" />
-            <div className="counter">2</div>
+            <div className="counter">{/*"Depends on the messages"*/}</div>
           </div>
           <div className="item">
             <ListOutlinedIcon className="icon" />

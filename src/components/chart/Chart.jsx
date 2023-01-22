@@ -9,18 +9,18 @@ import {
 } from "recharts";
 
 const data = [
-  { name: "January", Total: 1200 },
-  { name: "February", Total: 2100 },
-  { name: "March", Total: 800 },
-  { name: "April", Total: 1600 },
-  { name: "May", Total: 900 },
-  { name: "June", Total: 1700 },
+  { name: "January", Total: 500 },
+  { name: "February", Total: 600 },
+  { name: "March", Total: 750 },
+  { name: "April", Total: 200 },
+  { name: "May", Total: 800 },
+  { name: "June", Total: 1200 },
 ];
 
 const Chart = ({ aspect, title }) => {
   return (
     <div className="chart">
-      <div className="title">{title}</div>
+      <div className="title">{"Overall Scores Per month"}</div>
       <ResponsiveContainer width="100%" aspect={aspect}>
         <AreaChart
           width={730}

@@ -1,4 +1,5 @@
 import "./widget.scss";
+import GradeIcon from "@mui/icons-material/Grade";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
@@ -9,7 +10,7 @@ const Widget = ({ type }) => {
   let data;
 
   //temporary
-  const amount = 100;
+  const amount = 0;
   const diff = 20;
 
   switch (type) {
@@ -31,11 +32,11 @@ const Widget = ({ type }) => {
       break;
     case "order":
       data = {
-        title: "ORDERS",
+        title: "GRADES",
         isMoney: false,
         link: "View all orders",
         icon: (
-          <ShoppingCartOutlinedIcon
+          <GradeIcon
             className="icon"
             style={{
               backgroundColor: "rgba(218, 165, 32, 0.2)",
@@ -47,7 +48,7 @@ const Widget = ({ type }) => {
       break;
     case "earning":
       data = {
-        title: "EARNINGS",
+        title: "ANNUAL BUDGET",
         isMoney: true,
         link: "View net earnings",
         icon: (
@@ -60,7 +61,7 @@ const Widget = ({ type }) => {
       break;
     case "balance":
       data = {
-        title: "BALANCE",
+        title: "DAY BUDGET",
         isMoney: true,
         link: "See details",
         icon: (
