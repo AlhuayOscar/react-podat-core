@@ -16,9 +16,9 @@ const Widget = ({ type }) => {
   switch (type) {
     case "user":
       data = {
-        title: "USERS",
+        title: "STUDENTS",
         isMoney: false,
-        link: "See all users",
+        link: "See all students",
         icon: (
           <PersonOutlinedIcon
             className="icon"
@@ -34,7 +34,7 @@ const Widget = ({ type }) => {
       data = {
         title: "GRADES",
         isMoney: false,
-        link: "View all orders",
+        link: "View all grades",
         icon: (
           <GradeIcon
             className="icon"
