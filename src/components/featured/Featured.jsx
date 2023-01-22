@@ -19,7 +19,7 @@ const Featured = () => {
         <p className="title">Your teacher Rank</p>
         <p className="amount">#30</p>
         <p className="desc">
-          Previous transactions processing. Last payments may not be included.
+          Previous data processing. Last moves may not be included.
         </p>
         <div className="summary">
           <div className="item">
